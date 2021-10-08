@@ -1,0 +1,26 @@
+---
+title: "Assignment 2"
+output:
+  html_document:
+    df_print: paged
+---
+
+### Gapminder is a  dataset containing data from countries of multiple continents. 
+
+It will be interesting to examine whether the dataset is balanced in terms of contintents. In this report, I plotted a bar chart to demonstrate how the dataset is balanced as follow:
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+source("wrangling_code.R")
+source("visualization_function.R")
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+viz(tibble_data)
+```
+
+From this bar chart, we notice that the dataset is quite unbalanced in terms of continents. Africa has the most observations in the dataset, and there are only few observations from Oceania. Besides these two continents, Americas, Asia and Europe have similar number of observations in this dataset.
+
+
+
+
+
